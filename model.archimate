@@ -32,6 +32,12 @@
       <element xsi:type="archimate:Capability" name="Data Processing" id="id-e74f110712b04d6898c02dafdf41f9fe"/>
       <element xsi:type="archimate:Capability" name="Identity Management" id="id-36bb74cd61234b838124b47a957d226c"/>
       <element xsi:type="archimate:Capability" name="Secure Processing" id="id-2e810f6ae63c47209e80a32479637dec"/>
+      <element xsi:type="archimate:Capability" name="Container Processing" id="id-30f789e8b79f4b21a3fff41b7f40eae3"/>
+      <element xsi:type="archimate:Capability" name="Data Access Application Management" id="id-85297f507a3a4be1a9715016514c64ce"/>
+      <element xsi:type="archimate:Capability" name="Data Application" id="id-a56b73f3829a4b4098687898fc8cde45"/>
+      <element xsi:type="archimate:Capability" name="Data Query" id="id-b5f8a83ea36e4f038674a8358934977b"/>
+      <element xsi:type="archimate:Capability" name="Data Requests Management" id="id-ae49c68864894001942f0aa4b8a64dd6"/>
+      <element xsi:type="archimate:Capability" name="Federated Learning" id="id-aa0db16490204d8d95f694a323d4b0b5"/>
     </folder>
     <folder name="Resource" id="id-cb180a0bbc68436f9ce0bef295d517c4"/>
     <folder name="Value Stream" id="id-10fc528917104c6e8a1a498d14f7ca1a">
@@ -49,15 +55,13 @@
       <element xsi:type="archimate:ValueStream" name="Add Value" id="id-c8ce8177622f4a7ab69e7d4ee12a20c8"/>
       <element xsi:type="archimate:ValueStream" name="Enroll and Onboard Participants" id="id-f411a837541a483c87e87145fd58b3ce"/>
       <element xsi:type="archimate:ValueStream" name="Govern Way of Working" id="id-135be9f890534d968dfee35f028098d7"/>
+      <element xsi:type="archimate:ValueStream" name="Manage Data Usage Requests" id="id-360d5a5e2c8a472f82f68365de1c3499"/>
     </folder>
     <folder name="Course of Action" id="id-863a1ccd41a94de99c2ef2bce3c53a02">
       <element xsi:type="archimate:CourseOfAction" name="Data wordt digitaal, eenduidig en gestandaardiseerd geregistreerd in het zorgproces en beschikbaar gesteld voor diverse secundaire doelen" id="id-44bea8145afa450485fcfae2701ca525"/>
       <element xsi:type="archimate:CourseOfAction" name="Elektronische gegevensuitwisseling is de standaard" id="id-cd05c717300a4a1f864fdaa3888842c8"/>
       <element xsi:type="archimate:CourseOfAction" name="Inwoners van Nederland hebben digitaal toegang tot, en de beschikking over, hun eigen zorggegevens" id="id-fc101be8a7da4fc5bfa4792f5e24dccb"/>
     </folder>
-    <element xsi:type="archimate:Capability" name="Federated Learning" id="id-aa0db16490204d8d95f694a323d4b0b5"/>
-    <element xsi:type="archimate:Capability" name="Data Query" id="id-b5f8a83ea36e4f038674a8358934977b"/>
-    <element xsi:type="archimate:Capability" name="Data Application" id="id-a56b73f3829a4b4098687898fc8cde45"/>
   </folder>
   <folder name="Business" id="id-01fe5946ef7147729467df6cda615e19" type="business">
     <folder name="Actor" id="id-edbd1903ab5d43ef957e52f2a93a9726">
@@ -838,6 +842,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
     <element xsi:type="archimate:ServingRelationship" id="id-56c99e27c4f345369b062195d23a5b1f" source="id-16433df22c4241d58bed4b400c8df15a" target="id-9b83ef94513e4644b4ecd4db2e2fd10b"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-2ffccbe785534781b7d0ab971da9d720" source="id-9f3a8e7f59244d6d86d5af0ef7958254" target="id-16433df22c4241d58bed4b400c8df15a"/>
     <element xsi:type="archimate:AccessRelationship" id="id-c3e97804f97140d8af549e026d02d485" source="id-16433df22c4241d58bed4b400c8df15a" target="id-de84592e8c8047dca129b01bd1109f82"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8ed22b56ce724203a576488c97c1f63c" source="id-484b1869f0f44c1abb2078ae62d939fd" target="id-360d5a5e2c8a472f82f68365de1c3499"/>
   </folder>
   <folder name="Views" id="id-a3b4fb778fd9474594ee7be3e9d5e273" type="diagrams">
     <folder name="1 Key Concepts" id="id-6b3f9b5670a6467a98a0deee3cda5d74">
@@ -2437,15 +2442,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
         <child xsi:type="archimate:DiagramObject" id="id-46f9aff3e0de4179a8f0754b2302eff5" archimateElement="id-484b1869f0f44c1abb2078ae62d939fd">
           <bounds x="24" y="396" width="1261" height="157"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c4f13cacdf4648279213ab5b960c51a1" source="id-46f9aff3e0de4179a8f0754b2302eff5" target="id-6d78507805144b55bf25796b1a8b9a6b" archimateRelationship="id-a7173482998e4fb793b509c5fd8a6c05"/>
-          <child xsi:type="archimate:DiagramObject" id="id-cde7674d2fab4043ba4ff78e28e446d4" archimateElement="id-c8ce8177622f4a7ab69e7d4ee12a20c8">
-            <bounds x="684" y="36" width="277" height="109"/>
-            <child xsi:type="archimate:DiagramObject" id="id-d81f36048a6347f2ac4044bc0347be1f" fillColor="#f8ead9" textPosition="1" archimateElement="id-231ecfa0d0a84d2d8bbd853bfd2b08ab">
-              <bounds x="144" y="36" width="120" height="55"/>
-            </child>
-            <child xsi:type="archimate:DiagramObject" id="id-2a1cdc16da5c4d2aabe936db420c51cc" fillColor="#f8ead9" textPosition="1" archimateElement="id-f90d0a5d61b84acdba3e624ea1df4819">
-              <bounds x="12" y="36" width="120" height="55"/>
-            </child>
-          </child>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0edb5e13628742ffadc45c66834344e1" source="id-46f9aff3e0de4179a8f0754b2302eff5" target="id-625af1d04d284482a029209a598f46cf" archimateRelationship="id-8ed22b56ce724203a576488c97c1f63c"/>
           <child xsi:type="archimate:DiagramObject" id="id-baa0fdbfbf8e4c348f8a09abb0ee6a3f" archimateElement="id-3dff013195a841abba9ad710da250c83">
             <bounds x="264" y="36" width="409" height="109"/>
             <child xsi:type="archimate:DiagramObject" id="id-4fa215f72be5455bb5b9989d52a73aba" fillColor="#faead7" textPosition="1" archimateElement="id-7a09b89a87b34d30b40cd52af8c20125">
@@ -2459,7 +2456,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-adcc4c6b72d44d1a94d52242f60834f5" archimateElement="id-f411a837541a483c87e87145fd58b3ce">
-            <bounds x="972" y="36" width="277" height="109"/>
+            <bounds x="684" y="36" width="277" height="109"/>
             <child xsi:type="archimate:DiagramObject" id="id-82a172d6643e406bb39d566b3fcff038" fillColor="#f8ead9" textPosition="1" archimateElement="id-e0d5b45b6e5f48f4ab39bd1d10252a46">
               <bounds x="144" y="36" width="120" height="55"/>
             </child>
@@ -2473,6 +2470,15 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
               <bounds x="12" y="36" width="120" height="55"/>
             </child>
           </child>
+          <child xsi:type="archimate:DiagramObject" id="id-625af1d04d284482a029209a598f46cf" targetConnections="id-0edb5e13628742ffadc45c66834344e1" archimateElement="id-360d5a5e2c8a472f82f68365de1c3499">
+            <bounds x="972" y="36" width="277" height="109"/>
+            <child xsi:type="archimate:DiagramObject" id="id-f337724fdcfe4698b6604564f4a05fcd" fillColor="#f4ebda" textPosition="1" archimateElement="id-85297f507a3a4be1a9715016514c64ce">
+              <bounds x="12" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-6cbd5cfa08034b859e03f978f1c6e09a" fillColor="#f4ebda" textPosition="1" archimateElement="id-ae49c68864894001942f0aa4b8a64dd6">
+              <bounds x="144" y="36" width="120" height="55"/>
+            </child>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-1806f3a9dbb2424bac4e65391dd15036" archimateElement="id-61287aa023c046f7bb17138b125b391b">
           <bounds x="24" y="24" width="637" height="361"/>
@@ -2481,7 +2487,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
           <sourceConnection xsi:type="archimate:Connection" id="id-1dd257e211a04dc4b0ec767559cc04ea" source="id-1806f3a9dbb2424bac4e65391dd15036" target="id-0abf1bc5351f43b7b695182044a1d1ac" archimateRelationship="id-973b4a2cc0ef470c894f88d8839960ee"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-916a35786cf7443c81e92c9a3fa6ac91" source="id-1806f3a9dbb2424bac4e65391dd15036" target="id-3c61caff550e4673af9adb32615018ca" archimateRelationship="id-ace2aecd9bbd4befb1361660ff234b40"/>
           <child xsi:type="archimate:DiagramObject" id="id-0abf1bc5351f43b7b695182044a1d1ac" targetConnections="id-47951563a2fa4e2caac3cee22dac6f44 id-1dd257e211a04dc4b0ec767559cc04ea id-fbb57fcbbf724558a543c67f8452b131" archimateElement="id-c27ab9f8223d4b74829d4b3f8fce1323">
-            <bounds x="12" y="36" width="145" height="253"/>
+            <bounds x="12" y="36" width="145" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="id-fc9559d620d94736be55521246d97316" fillColor="#f8ebda" textPosition="1" archimateElement="id-34a4197eebed424da95a55fbb2664823">
               <bounds x="12" y="60" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-47951563a2fa4e2caac3cee22dac6f44" source="id-fc9559d620d94736be55521246d97316" target="id-0abf1bc5351f43b7b695182044a1d1ac" archimateRelationship="id-1fe7b9cc963b4c1f92a23d966192e1fa"/>
@@ -2492,14 +2498,14 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-3c61caff550e4673af9adb32615018ca" targetConnections="id-b4d6bb3a0a93410989cb0275589aae59 id-916a35786cf7443c81e92c9a3fa6ac91" archimateElement="id-651fb3e0958740a5bd261d4210f37150">
-            <bounds x="324" y="36" width="145" height="253"/>
+            <bounds x="324" y="36" width="145" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="id-99d06646b973437f9b210070df67dc34" fillColor="#f8ebda" textPosition="1" archimateElement="id-af6a1fbbfde049439cb9bafc714bc303">
               <bounds x="12" y="60" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-b4d6bb3a0a93410989cb0275589aae59" source="id-99d06646b973437f9b210070df67dc34" target="id-3c61caff550e4673af9adb32615018ca" archimateRelationship="id-2f580715a4e84e4694c17054514d7a0b"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f636fb9b852245789b1f7ed0a8ca7f98" targetConnections="id-02375d51d1fa47508681e0370758bd9b id-50761badc91540b68b5716238323a198 id-d3253bbfd8ec432a9c56ec200a32ff7d id-8307093fd4da4b33833edc52f8dcde93" archimateElement="id-e36a19e91a544b809c892608375a0d4c">
-            <bounds x="480" y="36" width="145" height="253"/>
+            <bounds x="480" y="36" width="145" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="id-61f61aab1a2f400b97d293439cdd2d60" fillColor="#f8ebda" textPosition="1" archimateElement="id-265dda11b8e142108fa87df7dbd811fa">
               <bounds x="12" y="60" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-50761badc91540b68b5716238323a198" source="id-61f61aab1a2f400b97d293439cdd2d60" target="id-f636fb9b852245789b1f7ed0a8ca7f98" archimateRelationship="id-f21f42818d70402dbfdd7d2292556b3f"/>
@@ -2512,9 +2518,12 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
               <bounds x="12" y="180" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-8307093fd4da4b33833edc52f8dcde93" source="id-43a0a17004c3476184ab6a7d4f84ca5b" target="id-f636fb9b852245789b1f7ed0a8ca7f98" archimateRelationship="id-53effab116eb41e3abb12123d9641355"/>
             </child>
+            <child xsi:type="archimate:DiagramObject" id="id-b816ac4443264b59bda6f09b7a9450a6" fillColor="#f5ebdb" textPosition="1" archimateElement="id-30f789e8b79f4b21a3fff41b7f40eae3">
+              <bounds x="12" y="240" width="120" height="55"/>
+            </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-92b925778e474acb870c4df9800f1122" targetConnections="id-efa3594795554411a79acf98ce10ed1e id-fc54ce40faa4466aa44ab3b5fa4c788a id-d9c41f80427b453da4adfa9d739ed42f" archimateElement="id-267c338a17d345a88bc92442b14d9556">
-            <bounds x="168" y="36" width="145" height="253"/>
+            <bounds x="168" y="36" width="145" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="id-002beec8d57a43b79b29d8c931e76639" fillColor="#f8ebda" textPosition="1" archimateElement="id-823be170d48448f9a2a817ea456b5d13">
               <bounds x="12" y="60" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-fc54ce40faa4466aa44ab3b5fa4c788a" source="id-002beec8d57a43b79b29d8c931e76639" target="id-92b925778e474acb870c4df9800f1122" archimateRelationship="id-2b1d465e56c04b90bb828872ea946f6c"/>
@@ -2531,14 +2540,14 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
           <sourceConnection xsi:type="archimate:Connection" id="id-be6a65b07b654d7dbcb4b3791a2a0347" source="id-912e6d8dfc994fe18da9295ca2d9c75b" target="id-dcb0cce455884829a385393e8c2bd5fa" archimateRelationship="id-14d96b2304474bc5bfb80d635ba7353f"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-1901f6a8e2614587aa593f6a20aa9db8" source="id-912e6d8dfc994fe18da9295ca2d9c75b" target="id-adb1a7fd44a54f2793721ff6f4b5275c" archimateRelationship="id-9e734742824d4fd7a372804e5a9b8e59"/>
           <child xsi:type="archimate:DiagramObject" id="id-110849df0bb24b8fb10a6568bce9ca7e" targetConnections="id-7bcb9b3486b6473787a9699509f8d941 id-30f6f3714ad04945b1de756ef2ac227c" archimateElement="id-1c6c6cd7077e48278125d255a7eb30f4">
-            <bounds x="12" y="35" width="145" height="254"/>
+            <bounds x="12" y="35" width="145" height="314"/>
             <child xsi:type="archimate:DiagramObject" id="id-3daf5d360c3d48a78e7323f131b366f0" fillColor="#f8ebda" textPosition="1" archimateElement="id-204df6f3db504350806064d97c16c7be">
               <bounds x="12" y="60" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-30f6f3714ad04945b1de756ef2ac227c" source="id-3daf5d360c3d48a78e7323f131b366f0" target="id-110849df0bb24b8fb10a6568bce9ca7e" archimateRelationship="id-26157e70925d44fbbafead464848e437"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-dcb0cce455884829a385393e8c2bd5fa" targetConnections="id-be6a65b07b654d7dbcb4b3791a2a0347 id-4f523d36772a49049e9bd39b5494ff85 id-ca5e4195993c4f09a30c6f18e1046872" archimateElement="id-c09735b5124a48f29238a017bf2fa36d">
-            <bounds x="168" y="36" width="277" height="253"/>
+            <bounds x="168" y="36" width="277" height="313"/>
             <child xsi:type="archimate:DiagramObject" id="id-7c85704e13bd4eee8960c9984e2488b5" fillColor="#f8ebda" textPosition="1" archimateElement="id-2b4144a6ddb6453394670b6772a72bf7">
               <bounds x="12" y="120" width="120" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-4f523d36772a49049e9bd39b5494ff85" source="id-7c85704e13bd4eee8960c9984e2488b5" target="id-dcb0cce455884829a385393e8c2bd5fa" archimateRelationship="id-05fdf85cf1a1416891dde30072ca4c49"/>
@@ -2558,7 +2567,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-adb1a7fd44a54f2793721ff6f4b5275c" targetConnections="id-1901f6a8e2614587aa593f6a20aa9db8" archimateElement="id-9c4b81d65a7948a5a4bd34c336ad178e">
-            <bounds x="456" y="35" width="145" height="254"/>
+            <bounds x="456" y="35" width="145" height="314"/>
             <child xsi:type="archimate:DiagramObject" id="id-d525adc1e4134f688cf47e9ee299ffa8" fillColor="#f5ebdb" textPosition="1" archimateElement="id-2e810f6ae63c47209e80a32479637dec">
               <bounds x="12" y="60" width="120" height="55"/>
             </child>
