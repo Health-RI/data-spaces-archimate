@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Locate Datasource and Obtain Data</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Locate Datasource and Obtain Data</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ValueStream"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ValueStream" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-87725457ec0c460e99702c4e1ec7b32c">
+																	<td><a href="../views/id-87725457ec0c460e99702c4e1ec7b32c.html" target="view" title="With All Roles Data Reuse"> With All Roles Data Reuse </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-db1de5f3208842a199e3bf1478e2680d">
+																	<td><a href="../views/id-db1de5f3208842a199e3bf1478e2680d.html" target="view" title="With Capabilities for Primary Use"> With Capabilities for Primary Use </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-b99aee58f84f497a8dff0d6fb44493e4">
+																	<td><a href="../views/id-b99aee58f84f497a8dff0d6fb44493e4.html" target="view" title="With All Roles"> With All Roles </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-f3abac5cf84a43e3866aa2a92d42b596">
+																	<td><a href="../views/id-f3abac5cf84a43e3866aa2a92d42b596.html" target="view" title="With Capabilities for Secondary Use"> With Capabilities for Secondary Use </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-5634fca754804e3daec80f6cfcd40830">
+																	<td><a href="../views/id-5634fca754804e3daec80f6cfcd40830.html" target="view" title="With All Products"> With All Products </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-daf5be21ec504df28dd7f749fdd483ee">
+																	<td><a href="../views/id-daf5be21ec504df28dd7f749fdd483ee.html" target="view" title="With Course of Action"> With Course of Action </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-1da8623e644a4128ac5815dbbf61d9c4">
+																	<td><a href="../views/id-1da8623e644a4128ac5815dbbf61d9c4.html" target="view" title="Overview"> Overview </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-6ff2f699db214884bbe2e66f5d58ed8d.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+											<td><a href="../elements/id-9c4b81d65a7948a5a4bd34c336ad178e.html" target="element"> Use Data</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-14d96b2304474bc5bfb80d635ba7353f.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-6fc324043dec4f65990ab849205218d2.html" target="element"> Reuse Data</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-eb8db1726da245d0877c02def0381aa9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-64ec0727903d423daf405eb4ab787f1b.html" target="element"> Personal Health Record Discovery</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-05fdf85cf1a1416891dde30072ca4c49.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-2b4144a6ddb6453394670b6772a72bf7.html" target="element"> Service Discovery</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-b2ad4cfe3c7a4bfead09bf632a380ec6.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-265dda11b8e142108fa87df7dbd811fa.html" target="element"> Data Exchange</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-17c977796c2b4791a173eec5fdbb3155.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-TriggeringRelationship" /></td>
+											<td><a href="../elements/id-1c6c6cd7077e48278125d255a7eb30f4.html" target="element"> Request Data Product</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-fb3231e334044ac2b71f1aa21a681675.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-c4fa0973fdb04619abb23c24b0b594e7.html" target="element"> Service Provider</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f0497324b3234c3a93795c96413bdac7.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-d3f61618ed334a8b8101ba30121e3f90.html" target="element"> Data Space Node</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9e5354a9fff94b29ba89bec3f865f4e4.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-14040612adcf4ed6ba4e94da44720676.html" target="element"> Data Consumer Node</a></td>
+											<td><a href="../elements/id-c09735b5124a48f29238a017bf2fa36d.html" target="element"> Locate Datasource and Obtain Data</a></td>
+										</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

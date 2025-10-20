@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Participants</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Participants</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DiagramModelGroup"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DiagramModelGroup" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-78f7786a9fb1436284ca9f7d0adc5432.html" target="element"> Opportunity Identified </a> </td>
+											    <td> <a href="../elements/id-78f7786a9fb1436284ca9f7d0adc5432.html" target="element" class="i18n-elementtype-BusinessEvent">
+											    </a> </td>
+											</tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-aa1d84170dd3410aa1506f373e23cc09.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-aa1d84170dd3410aa1506f373e23cc09.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+											<tr>
+											    <td> <a href="../elements/id-ce8e8f45b957447dba5c838378afd469.html" target="element"> Explore Possibilities </a> </td>
+											    <td> <a href="../elements/id-ce8e8f45b957447dba5c838378afd469.html" target="element" class="i18n-elementtype-BusinessProcess">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cf01b33b4f4143868b1a0aeaf8548fde.html" target="element"> Understand Stakeholder Needs </a> </td>
+											    <td> <a href="../elements/id-cf01b33b4f4143868b1a0aeaf8548fde.html" target="element" class="i18n-elementtype-BusinessProcess">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4a2fd33974bc4e9fa7788758848e9b37.html" target="element"> Value Established </a> </td>
+											    <td> <a href="../elements/id-4a2fd33974bc4e9fa7788758848e9b37.html" target="element" class="i18n-elementtype-BusinessEvent">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-69ed7172573548359a8d6f9862f59887.html" target="element"> Request for a Rulebook Change </a> </td>
+											    <td> <a href="../elements/id-69ed7172573548359a8d6f9862f59887.html" target="element" class="i18n-elementtype-BusinessProcess">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-0a812f72ad134f43aed7dfd6caf2f41a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0a812f72ad134f43aed7dfd6caf2f41a.html" target="element" class="i18n-elementtype-TriggeringRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-78f7786a9fb1436284ca9f7d0adc5432.html" target="element"> Opportunity Identified </a> </td>
+																		<td> <a href="../elements/id-ce8e8f45b957447dba5c838378afd469.html" target="element"> Explore Possibilities </a> </td>
+																	</tr>
+
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+																	<tr>
+																		<td> <a href="../elements/id-a8baf572db754bec8a7b04dd3fceae93.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a8baf572db754bec8a7b04dd3fceae93.html" target="element" class="i18n-elementtype-TriggeringRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ce8e8f45b957447dba5c838378afd469.html" target="element"> Explore Possibilities </a> </td>
+																		<td> <a href="../elements/id-cf01b33b4f4143868b1a0aeaf8548fde.html" target="element"> Understand Stakeholder Needs </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-19e6e37a4e4d4399873e00ca58018da4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-19e6e37a4e4d4399873e00ca58018da4.html" target="element" class="i18n-elementtype-TriggeringRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cf01b33b4f4143868b1a0aeaf8548fde.html" target="element"> Understand Stakeholder Needs </a> </td>
+																		<td> <a href="../elements/id-fcc784db7c7848bc9b9b06d6ac88abc5.html" target="element"> Find Actors and Use Cases </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-76c8a8258edb4ab5849500430cb6c963.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-76c8a8258edb4ab5849500430cb6c963.html" target="element" class="i18n-elementtype-TriggeringRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4a2fd33974bc4e9fa7788758848e9b37.html" target="element"> Value Established </a> </td>
+																		<td> <a href="../elements/id-69ed7172573548359a8d6f9862f59887.html" target="element"> Request for a Rulebook Change </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
