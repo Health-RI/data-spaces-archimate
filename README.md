@@ -8,6 +8,7 @@ This respository contains a Archimate model of a data space. It combines various
 - [European Digital Identity Wallet Architectural Reference Framework (ARF)](https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/2.6.0/)
 - [European Interoperability Reference Architecture (EIRA)](https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/eira)
 - [Data Mesh Architecture](https://www.datamesh-architecture.com/)
+- [Guidelines from the TEHDAS2 joint action](https://tehdas.eu)
 
 ## Contributing
 
@@ -15,7 +16,7 @@ We use [Archi v5.7.0 or later](https://www.archimatetool.com/download/) in combi
 
 ## License
 
-<a href="https://github.com/health-ri/data-spaces-archimate">Data spaces archimate model</a> © 2025 by <a href="https://creativecommons.org">René Hietkamp</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.<br><br><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;">
+<a href="https://github.com/health-ri/data-spaces-archimate">Data spaces archimate model</a> © 2025 by <a href="https://www.linkedin.com/in/renehietkamp/">René Hietkamp</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.<br><br><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;">
 
 <i class="fa-brands fa-creative-commons"></i>
 
