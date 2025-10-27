@@ -10,6 +10,10 @@ This respository contains a Archimate model of a data space. It combines various
 - [Data Mesh Architecture](https://www.datamesh-architecture.com/)
 - [Guidelines from the TEHDAS2 joint action](https://tehdas.eu)
 
+## HTML Report
+
+The report for the ArchiMate model can be viewed [here](https://health-ri.github.io/data-spaces-archimate/) 
+
 ## Contributing
 
 We use [Archi v5.7.0 or later](https://www.archimatetool.com/download/) in combination with [coArchi2](https://www.archimatetool.com/plugins/) for collaborative work on the archimate model, following the [Archimate Next](https://github.com/Health-RI/data-spaces-archimate/blob/main/s250_1-archimate-next-specification.pdf) specification.
