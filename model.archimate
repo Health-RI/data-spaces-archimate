@@ -140,6 +140,8 @@ As per Article 58 of the EHDS, HDABs are required to publicly list information o
       <element xsi:type="archimate:BusinessObject" name="Health Data Request" id="id-ed7007de04364bd9a57c8be26aefdb7b"/>
       <element xsi:type="archimate:BusinessObject" name="Employee Record" id="id-406d8165df1a40a7adfaa266a0ad9bef"/>
       <element xsi:type="archimate:BusinessObject" name="Financial record" id="id-89212b9fca6c4084acb1ae97ecf64783"/>
+      <element xsi:type="archimate:BusinessObject" name="Domain Model Employee Record " id="id-efdc5953fb9b4a89ac851cdc3819fc5e"/>
+      <element xsi:type="archimate:BusinessObject" name="Domain Model Financial Record" id="id-9f107b1159af46e385a395bf58613b16"/>
     </folder>
     <folder name="Product" id="id-5b85087bf2ad4e86b6589dd6ece76d49">
       <element xsi:type="archimate:Product" name="Data Space Node" id="id-d3f61618ed334a8b8101ba30121e3f90"/>
@@ -385,8 +387,6 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
       </folder>
       <folder name="Function" id="id-a37274aeedce44d095c9a8afe82fd68c"/>
     </folder>
-    <element xsi:type="archimate:BusinessObject" name="Domain Model Financial Record" id="id-9f107b1159af46e385a395bf58613b16"/>
-    <element xsi:type="archimate:BusinessObject" name="Domain Model Employee Record " id="id-efdc5953fb9b4a89ac851cdc3819fc5e"/>
   </folder>
   <folder name="Application" id="id-d50dcf55e7e8419a8122909747c4369e" type="application">
     <folder name="Object" id="id-6b149375bf9a4240a20c1321f21a8258"/>
@@ -3933,7 +3933,8 @@ D6.3 Guideline for Health Data Access Bodies on the procedures and formats for d
               </child>
               <child xsi:type="archimate:Note" id="id-30fe47407a314cd1bc11740ba2be6c9c" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffff">
                 <bounds x="271" y="180" width="185" height="80"/>
-                <content>Decision; is the data product the data resource or an extraction of the data product?</content>
+                <content>Decision; is the data product the data resource or an extraction of the data product?
+View beschikbaar stellen</content>
               </child>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-1823f6988c22486499d274a093d2b4f4" lineColor="#5c5c5c" fillColor="#f0df8c" archimateElement="id-f3c1d8378f6642fe87067b971b934454">
