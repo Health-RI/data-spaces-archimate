@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Analytics Notebook Server</title>
+	<title>Analytics Server</title>
 
 	<!-- JQUERY -->
 	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Analytics Notebook Server</b>
+               <b>Analytics Server</b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-elementtype-ApplicationComponent"></span>)
@@ -48,7 +48,7 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The Analytics Notebook Server is an example of an analytics application running within the secure processing environment. Alternatively, the analytics can be performed in a containerized environment.</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -72,11 +72,14 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-ac08c4eddd60480b98e05b2e60e82110">
-																	<td><a href="../views/id-ac08c4eddd60480b98e05b2e60e82110.html" target="view" title="Secure Processing"> Secure Processing </a></td>
+								<tr id="used-in-views-id-0935711123294adfa5eb5aafe16d2953">
+																	<td><a href="../views/id-0935711123294adfa5eb5aafe16d2953.html" target="view" title="Federated Computing"> Federated Computing </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-0c5f4fa597764667a4dedfec2b86cf7e">
 																	<td><a href="../views/id-0c5f4fa597764667a4dedfec2b86cf7e.html" target="view" title="Data Requests Handling"> Data Requests Handling </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-ac08c4eddd60480b98e05b2e60e82110">
+																	<td><a href="../views/id-ac08c4eddd60480b98e05b2e60e82110.html" target="view" title="Secure Processing"> Secure Processing </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-60ef7805c31f47fdbc2da11ec1512abb">
 																	<td><a href="../views/id-60ef7805c31f47fdbc2da11ec1512abb.html" target="view" title="Data Analytics"> Data Analytics </a></td>
@@ -98,39 +101,64 @@
 									<tr>
 											<td><a href="../elements/id-d685fa9021134fdbae09062d91772f79.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
 											<td><a href="../elements/id-4dd500b477e34c3a8da25dae594a38dc.html" target="element"> SPE Remote Desktop</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-300d7cdaa14149238c688508f9ebc52b.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
 											<td><a href="../elements/id-202d0ad869534984922355f62af6a11c.html" target="element"> SPE Web Interface</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a7b50af9131540f1a97e0490e3247b08.html" target="element" title="Execure algorithm ">Execure algorithm </a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+											<td><a href="../elements/id-546144e42d5246a5b7f892b0cef77504.html" target="element"> REST Interface</a></td>
 										</tr>
 									<tr>
-											<td><a href="../elements/id-45ba8a1003594eff85b309e6e230bea1.html" target="element" title=""></a></td>
-											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
-											<td><a href="../elements/id-67a9c96a86e349bf834ba6aba2035659.html" target="element"> Secure Processing Environment</a></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
-										</tr><tr>
-											<td><a href="../elements/id-b8fb1fb787c64ec4ba4908ad86ab153b.html" target="element" title=""></a></td>
-											<td><span class="i18n-elementtype-ServingRelationship" /></td>
-											<td><a href="../elements/id-546144e42d5246a5b7f892b0cef77504.html" target="element"> REST Interface</a></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
-										</tr><tr>
 											<td><a href="../elements/id-000b6768fa71486cbd1e6af0386de9d9.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-ServingRelationship" /></td>
 											<td><a href="../elements/id-e7d341cc07b14a9e908f3d1d9a3e568b.html" target="element"> Query Processing Environment</a></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-1dc7ae2fad4d4f61bab37b6528c87df8.html" target="element" title="query result">query result</a></td>
 											<td><span class="i18n-elementtype-FlowRelationship" /></td>
 											<td><a href="../elements/id-e7d341cc07b14a9e908f3d1d9a3e568b.html" target="element"> Query Processing Environment</a></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-b002ea3355c94c5c806af4f9392051b8.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-097b00b04a51422188dd0e3e29b6877d.html" target="element"> Federated Analytics Portal</a></td>
-											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Notebook Server</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-b8fb1fb787c64ec4ba4908ad86ab153b.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-546144e42d5246a5b7f892b0cef77504.html" target="element"> REST Interface</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-45ba8a1003594eff85b309e6e230bea1.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-67a9c96a86e349bf834ba6aba2035659.html" target="element"> Secure Processing Environment</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-43813a0029364e5496cecc4c30d5d5d3.html" target="element" title="data discovery">data discovery</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-0f46cdb23f29415b84399d4e26ac8f62.html" target="element"> Dataset Catalogue System</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-dc54d60ea5034a419a437b541bb44e8e.html" target="element" title="Return Resultset">Return Resultset</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-546144e42d5246a5b7f892b0cef77504.html" target="element"> REST Interface</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-338381d583d14f11b651900a606efd67.html" target="element" title="data permit">data permit</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-66b89fdf1a53469592a57c44c7aeadf8.html" target="element"> Data Access Application Management System (DAAMS)</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a3c63d3cf2934ef7a49c9418beecf829.html" target="element" title="authorisation based on permit">authorisation based on permit</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-546144e42d5246a5b7f892b0cef77504.html" target="element"> REST Interface</a></td>
+											<td><a href="../elements/id-3c5226229eda4923bd1e698289d8aeb4.html" target="element"> Analytics Server</a></td>
 										</tr>
 							</tbody>
 						</table>
