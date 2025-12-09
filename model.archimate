@@ -450,7 +450,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
       <element xsi:type="archimate:ApplicationComponent" name="Issuance System" id="id-01d6f2ac566f4501854da16d45e707c3"/>
       <element xsi:type="archimate:ApplicationComponent" name="Query Dispatcher" id="id-79341c95e6494baebe1c4a50c242f2d4"/>
       <element xsi:type="archimate:ApplicationComponent" name="Query Processing Environment" id="id-e7d341cc07b14a9e908f3d1d9a3e568b"/>
-      <element xsi:type="archimate:ApplicationComponent" name="Federated Analytics Portal" id="id-097b00b04a51422188dd0e3e29b6877d"/>
+      <element xsi:type="archimate:ApplicationComponent" name="Federated Processing Hub" id="id-097b00b04a51422188dd0e3e29b6877d"/>
       <element xsi:type="archimate:ApplicationComponent" name="SPE Admin Portal" id="id-8d15e3a667b0430a88023e6c7bf7d11b"/>
       <element xsi:type="archimate:ApplicationComponent" name="Data pipeline" id="id-a8948fc2866f47b1838512e955e72768"/>
       <element xsi:type="archimate:ApplicationComponent" name="Resource Server" id="id-898f46339cfe4f79b42a670735bea095"/>
