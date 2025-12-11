@@ -153,6 +153,7 @@ Definition from CEN Workshop Agreement Trusted Data Transactions.</documentation
       <element xsi:type="archimate:BusinessObject" name="Domain Model Financial Record" id="id-9f107b1159af46e385a395bf58613b16"/>
       <element xsi:type="archimate:BusinessObject" name="Data Extract" id="id-3c34c96037a44d3f8f9da35f0df6f0ec"/>
       <element xsi:type="archimate:BusinessObject" name="Dataset" id="id-ffaca4d4612745e1ab57d53211ef9d88"/>
+      <element xsi:type="archimate:BusinessObject" name="Resultset" id="id-8edd02fda18c44b18543abc2a25fe0d8"/>
     </folder>
     <folder name="Product" id="id-5b85087bf2ad4e86b6589dd6ece76d49">
       <element xsi:type="archimate:Product" name="Data Space Node" id="id-d3f61618ed334a8b8101ba30121e3f90"/>
@@ -360,7 +361,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
           <documentation>Implementation of Article 67, Health data access applications</documentation>
         </element>
         <element xsi:type="archimate:BusinessService" name="Conduct Centralized Analytics" id="id-326e87d47522429e91043bc0095acbcd"/>
-        <element xsi:type="archimate:BusinessService" name="Conduct Federated Analytics" id="id-80ceb557378848029ca18264a7cf8ee6"/>
+        <element xsi:type="archimate:BusinessService" name="Conduct Federated Analytics and Learning" id="id-80ceb557378848029ca18264a7cf8ee6"/>
         <element xsi:type="archimate:BusinessService" name="Execute Algorithm" id="id-91cb077b5c424626b72844cc3febefcb"/>
         <element xsi:type="archimate:BusinessService" name="Report on Partient's Health Condition" id="id-a458be1ac40743838b9ba06b92e57e5b">
           <documentation>Where a health data access body is informed by a health data user of a significant finding related to the health of a natural person, as referred to in Article 61(5) of the EHDS regulation, the health data access body shall inform the health data holder about that finding. The health data holder shall, under the conditions laid down by national law, inform the natural person or health professional treating the natural person concerned.
@@ -370,7 +371,7 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
         <element xsi:type="archimate:BusinessService" name="Request Data Extraction" id="id-de3cba36c90d430794f476dd490a7360"/>
         <element xsi:type="archimate:BusinessService" name="Revoke Attestation" id="id-8d648bb96ed94edf97e59daa61196917"/>
         <element xsi:type="archimate:BusinessService" name="Receive Application" id="id-3e743faf1e254ab9add48e17dd3965c3"/>
-        <element xsi:type="archimate:BusinessService" name="Conduct Descriptive Analytics" id="id-5c2761f9154040268e32421517db9337"/>
+        <element xsi:type="archimate:BusinessService" name="Perform Data Request" id="id-5c2761f9154040268e32421517db9337"/>
         <element xsi:type="archimate:BusinessService" name="Process Data Request" id="id-673e43083f0843eca8bc37541a782b83"/>
         <element xsi:type="archimate:BusinessService" name="Register Container Image" id="id-b86904bd6af840eebd1d341b30c844e0"/>
         <element xsi:type="archimate:BusinessService" name="Issue Data Permit or Request Approval" id="id-bc5fa06a268548ba8adf6c2439fd0441"/>
@@ -405,7 +406,6 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
       </folder>
       <folder name="Function" id="id-a37274aeedce44d095c9a8afe82fd68c"/>
     </folder>
-    <element xsi:type="archimate:BusinessObject" name="Resultset" id="id-8edd02fda18c44b18543abc2a25fe0d8"/>
   </folder>
   <folder name="Application" id="id-d50dcf55e7e8419a8122909747c4369e" type="application">
     <folder name="Object" id="id-6b149375bf9a4240a20c1321f21a8258"/>
@@ -1058,9 +1058,8 @@ Some of these services must comply with specific EU legislation, such as eIDAS o
     <element xsi:type="archimate:TriggeringRelationship" id="id-ebe98a4815cd4059b9706b6d0c409102" source="id-8a26114f852249029144fa9c870cae50" target="id-66b89fdf1a53469592a57c44c7aeadf8"/>
     <element xsi:type="archimate:FlowRelationship" name="Request Data Extraction" id="id-7726d937da3e43af87c5cb5d291725ec" source="id-8a26114f852249029144fa9c870cae50" target="id-4417c3bf599a47468f53c868e05306e6"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-19a3cdbf0747461093a40305a1ad0831" source="id-a985616af1e64348bf2b603759a79938" target="id-5c2761f9154040268e32421517db9337"/>
-    <element xsi:type="archimate:ServingRelationship" id="id-000b6768fa71486cbd1e6af0386de9d9" source="id-e7d341cc07b14a9e908f3d1d9a3e568b" target="id-3c5226229eda4923bd1e698289d8aeb4"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-000b6768fa71486cbd1e6af0386de9d9" source="id-e7d341cc07b14a9e908f3d1d9a3e568b" target="id-097b00b04a51422188dd0e3e29b6877d"/>
     <element xsi:type="archimate:FlowRelationship" name="send verified data request message" id="id-da4fbb59c26a46df9020cf5ecf2a8092" source="id-79341c95e6494baebe1c4a50c242f2d4" target="id-e7d341cc07b14a9e908f3d1d9a3e568b"/>
-    <element xsi:type="archimate:FlowRelationship" name="query result" id="id-1dc7ae2fad4d4f61bab37b6528c87df8" source="id-e7d341cc07b14a9e908f3d1d9a3e568b" target="id-3c5226229eda4923bd1e698289d8aeb4"/>
     <element xsi:type="archimate:FlowRelationship" name="send query result" id="id-adb9ae521aab4102bda604887aefa40b" source="id-e7d341cc07b14a9e908f3d1d9a3e568b" target="id-79341c95e6494baebe1c4a50c242f2d4"/>
     <element xsi:type="archimate:AccessRelationship" id="id-e4f86c4e231f4082a4165c22cbcefc81" source="id-66b89fdf1a53469592a57c44c7aeadf8" target="id-ed7007de04364bd9a57c8be26aefdb7b"/>
     <element xsi:type="archimate:AccessRelationship" id="id-d22875b3b16c4c3789f7de0eae98986b" source="id-66b89fdf1a53469592a57c44c7aeadf8" target="id-8c1b1c663b694b93b6e2c78b2a8b78a6"/>
@@ -3925,13 +3924,9 @@ D6.3 Guideline for Health Data Access Bodies on the procedures and formats for d
                 <bounds x="84" y="72" width="120" height="55"/>
                 <sourceConnection xsi:type="archimate:Connection" id="id-bd9fe35bc39a43b59c34ed97e450b64a" lineColor="#000000" source="id-08ffd57315c24f87b17a53f7cab6f46f" target="id-9996258877ff4459acf290f5310cf42b" archimateRelationship="id-ab52f213032a415f847c1dab0d205047"/>
               </child>
-              <child xsi:type="archimate:DiagramObject" id="id-75dbede7064e4d588fc48de3fb6e7544" targetConnections="id-5443b5d8992c4a54bc70f46f543b61da id-03c0dd5788fa4f068cf87fed4f437cdf id-7fbf85ed1d3a4b93891b94410f7c5eb4" lineColor="#5c5c5c" fillColor="#bcd6df" textPosition="1" archimateElement="id-3c5226229eda4923bd1e698289d8aeb4">
-                <bounds x="420" y="72" width="120" height="55"/>
-              </child>
-              <child xsi:type="archimate:DiagramObject" id="id-5544495f6db0483884086ada5dc503e6" lineColor="#5c5c5c" fillColor="#bcd6df" textPosition="1" archimateElement="id-097b00b04a51422188dd0e3e29b6877d">
+              <child xsi:type="archimate:DiagramObject" id="id-5544495f6db0483884086ada5dc503e6" targetConnections="id-7fbf85ed1d3a4b93891b94410f7c5eb4" lineColor="#5c5c5c" fillColor="#bcd6df" textPosition="1" archimateElement="id-097b00b04a51422188dd0e3e29b6877d">
                 <bounds x="576" y="72" width="120" height="55"/>
                 <sourceConnection xsi:type="archimate:Connection" id="id-acd51b7559e04d2e99ce938df7c00b40" lineColor="#000000" source="id-5544495f6db0483884086ada5dc503e6" target="id-9fa6d29bd80a4412bedf34f525ce6ad1" archimateRelationship="id-ef9e3adde15f4b369ca738e02fd6af46"/>
-                <sourceConnection xsi:type="archimate:Connection" id="id-03c0dd5788fa4f068cf87fed4f437cdf" lineColor="#000000" source="id-5544495f6db0483884086ada5dc503e6" target="id-75dbede7064e4d588fc48de3fb6e7544" archimateRelationship="id-b002ea3355c94c5c806af4f9392051b8"/>
                 <sourceConnection xsi:type="archimate:Connection" id="id-a036926b42394e1dbb5fe43c7c2164da" lineColor="#000000" source="id-5544495f6db0483884086ada5dc503e6" target="id-261aff0523b6407084929a0e626fd1d8" archimateRelationship="id-f53b99e9bfac4d6ea3e9ab490986da9c"/>
               </child>
               <child xsi:type="archimate:DiagramObject" id="id-9fa6d29bd80a4412bedf34f525ce6ad1" targetConnections="id-acd51b7559e04d2e99ce938df7c00b40 id-c84ececaa9b74885b17776cf78b3bf2d id-db35ba0b0aaf40208ae01f47d99a9412" lineColor="#5c5c5c" fillColor="#bcd6df" textPosition="1" archimateElement="id-79341c95e6494baebe1c4a50c242f2d4">
@@ -3983,16 +3978,14 @@ D6.3 Guideline for Health Data Access Bodies on the procedures and formats for d
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-abed7202dca742c4b4f6929dc20bf44c" lineColor="#5c5c5c" fillColor="#f3eadd" archimateElement="id-8f44e5cd4ac24f1280dacd7238e78475">
-            <bounds x="696" y="552" width="217" height="121"/>
+            <bounds x="648" y="552" width="217" height="121"/>
             <child xsi:type="archimate:DiagramObject" id="id-b25221b6832a4794bc0c92bce692e85a" targetConnections="id-62b1bbca32934621b7fac08898f479d0" lineColor="#5c5c5c" fillColor="#bcd6df" textPosition="1" archimateElement="id-e7d341cc07b14a9e908f3d1d9a3e568b">
               <bounds x="12" y="36" width="193" height="55"/>
-              <sourceConnection xsi:type="archimate:Connection" id="id-5443b5d8992c4a54bc70f46f543b61da" lineColor="#000000" source="id-b25221b6832a4794bc0c92bce692e85a" target="id-75dbede7064e4d588fc48de3fb6e7544" archimateRelationship="id-1dc7ae2fad4d4f61bab37b6528c87df8">
-                <bendpoint startX="-72" startY="81" endX="192" endY="273"/>
-                <bendpoint startX="-216" startY="81" endX="48" endY="273"/>
-              </sourceConnection>
-              <sourceConnection xsi:type="archimate:Connection" id="id-7fbf85ed1d3a4b93891b94410f7c5eb4" lineColor="#000000" source="id-b25221b6832a4794bc0c92bce692e85a" target="id-75dbede7064e4d588fc48de3fb6e7544" archimateRelationship="id-000b6768fa71486cbd1e6af0386de9d9"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-db35ba0b0aaf40208ae01f47d99a9412" lineColor="#000000" source="id-b25221b6832a4794bc0c92bce692e85a" target="id-9fa6d29bd80a4412bedf34f525ce6ad1" archimateRelationship="id-adb9ae521aab4102bda604887aefa40b">
                 <bendpoint startX="216" startY="-3" endX="168" endY="189"/>
+              </sourceConnection>
+              <sourceConnection xsi:type="archimate:Connection" id="id-7fbf85ed1d3a4b93891b94410f7c5eb4" lineColor="#000000" source="id-b25221b6832a4794bc0c92bce692e85a" target="id-5544495f6db0483884086ada5dc503e6" archimateRelationship="id-000b6768fa71486cbd1e6af0386de9d9">
+                <bendpoint startX="-84" startY="-87" endX="-24" endY="105"/>
               </sourceConnection>
             </child>
             <child xsi:type="archimate:DiagramModelReference" id="id-3a4f5272b3ea4c5a835469892b893b4e" lineColor="#5c5c5c" fillColor="#dcebeb" alpha="0" model="id-0c5f4fa597764667a4dedfec2b86cf7e">
